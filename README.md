@@ -1,1 +1,1 @@
-# prusa-lcd-reader
+# Prusa LCD Reader
