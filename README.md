@@ -3,6 +3,15 @@
 Connects to flat ribbon cable no. 1 of Prusa MK3S or similar, listens to LCD
 communication, and sends the text to Home Assistant.
 
+## How it looks
+
+[![Screenshot of device sensors line 1 to 4 in Home Assistant.](images/device.png)](images/device.png)
+[![Screenshot of a Lovelace card mirroring the LCD.](images/lovelace.png)](images/lovelace.png)
+
+[![Rendering of the PCB, front.](images/pcb-front-small.png)](images/pcb-front.png)
+[![Rendering of the PCB, back.](images/pcb-back-small.png)](images/pcb-back.png)
+[![Photo of the board installed on the printer, underneath the LCD assembly.](images/installed-small.jpg)](images/installed.jpg)
+
 ## Preparing the printer
 
 Get a [10-pin IDC connector](https://www2.mouser.com/ProductDetail/Wurth-Elektronik/61201023021?qs=W%252B2sBeLta1Y7QgcPlTMBZQ%3D%3D)
@@ -51,6 +60,18 @@ prusa_lcd:
     - name: "Line 3"
     - name: "Line 4"
 ```
+
+## Sample Lovelace card
+````yaml
+type: markdown
+content: |-
+  ```
+  {{ states('sensor.printer_lcd_line_1') }}
+  {{ states('sensor.printer_lcd_line_2') }}
+  {{ states('sensor.printer_lcd_line_3') }}
+  {{ states('sensor.printer_lcd_line_4') }}
+  ```
+````
 
 ## Resources
 - Decoder code adapted from https://github.com/fsalomon/HD44780-decoder/
