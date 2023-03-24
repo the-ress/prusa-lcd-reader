@@ -2,8 +2,6 @@
 
 #include "const.h"
 
-// https://github.com/fsalomon/HD44780-decoder/blob/main/sniff.ino
-
 #define NUM_CHARS 80
 #define LINE_LENGTH 20
 #define MAX_UTF8_CHAR_LENGTH 7 // 4 bytes for character, 3 bytes for variation selector

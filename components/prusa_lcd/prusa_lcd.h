@@ -7,8 +7,6 @@
 #include "prusa_lcd_decoder.h"
 #include "prusa_lcd_renderer.h"
 
-// https://github.com/fsalomon/HD44780-decoder/blob/main/sniff.ino
-
 namespace esphome {
 namespace prusa_lcd {
 

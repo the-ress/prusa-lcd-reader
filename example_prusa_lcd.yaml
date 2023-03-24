@@ -1,0 +1,18 @@
+external_components:
+  - source: github://the-ress/prusa-lcd-reader@main
+    components:
+      - prusa_lcd
+
+prusa_lcd:
+  data_pins:
+    - GPIO21
+    - GPIO17
+    - GPIO22
+    - GPIO16
+  enable_pin: GPIO19
+  rs_pin: GPIO18
+  text_sensors:
+    - name: "Line 1"
+    - name: "Line 2"
+    - name: "Line 3"
+    - name: "Line 4"
