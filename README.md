@@ -24,7 +24,7 @@ the ESP for better thermal performance.
 - ESP32-WROOM-32
 - voltage regulator 5V to 3.3V - SOT-233-3 footprint
 - 6 NPN transistors (to protect GPIO from 5V signal) - SOT-23-3 footprint
-- various resistors and capacitors (0805 footprint)
+- various resistors and capacitors - 0805 footprint
 - 10-pin IDC connector header
 - a reset button (optional)
 - additional pin headers for the initial flashing (optional if you can bodge the
